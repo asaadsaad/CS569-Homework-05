@@ -1,4 +1,4 @@
-# CS569 Homework 06
+# CS569 Homework 05
 ## Exercise
 1. Create a custom directive called `isVisible` that accepts a boolean which is going to show or hide the element.
 ```html
