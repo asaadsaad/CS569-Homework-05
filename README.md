@@ -15,5 +15,5 @@
 ```
 3. Create a custom pipe `swapLetter` that works on strings and receives two letters, one to look for and replace it with the other letter.
 ```javascript
-@Component({template: `{{Asaad | swapLetter:a:@}}`}) // it will render `@s@@d`
+@Component({template: `{{'Asaad' | swapLetter:'a':'@'}}`}) // it will render `@s@@d`
 ```
