@@ -1,8 +1,8 @@
 # CS569 Homework 05
 ## Exercise
-1. Create a custom directive called `isVisible` that accepts a boolean which is going to show or hide the element.
+1. Create a custom directive called `colorize` that is going to set the font color value of the host component text to a random color value every 1 second. Colors are predefined in the state as an array: `['red', 'blue', 'green', 'yellow', 'maroon'....etc]`.
 ```html
-<component [isVisible]="false"></component> <!-- should be hidden -->
+<component colorize></component> <!-- the text will change color every second -->
 ```
 2. Create a custom directive called `makeBigger` that increases the size of the text by `n` pixels passed as an input every time users double-click on the host element. 
 ```html
@@ -13,7 +13,7 @@
 <!-- when double-click the component, it will increase its size by 6px -->
 
 ```
-3. Create a custom pipe `multi` that works on strings and receives one number to repeat the string number of times, example: `string | multi:3` will result to: `string string string`
+3. Create a custom pipe `swapLetter` that works on strings and receives two letters, one to look for and replace it with the other letter.
 ```javascript
-@Component({template: `{{name | multi:5}}`}) // it will render the property `name` 5 times
+@Component({template: `{{Asaad | swapLetter:a:@}}`}) // it will render `@s@@d`
 ```
