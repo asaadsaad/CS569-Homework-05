@@ -1,6 +1,6 @@
 # CS569 Homework 05
 ## Exercise
-1. Create a custom directive called `colorize` that is going to set the font color value of the host component text to a random color value every 1 second. Colors are predefined in the state as an array: `['red', 'blue', 'green', 'yellow', 'maroon'....etc]`.
+1. Create a custom directive called `colorize` that is going to set the font color value of the host component text to a random color value every 1 second. Colors are predefined in the state as an array: `['red', 'blue', 'green', 'yellow', 'maroon'....etc]`. Make sure your code does not lead to a memory leak.
 ```html
 <component colorize></component> <!-- the text will change color every second -->
 ```
